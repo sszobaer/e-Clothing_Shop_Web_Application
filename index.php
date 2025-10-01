@@ -16,7 +16,7 @@
             <h1>Elevate Your Style with Velora</h1>
             <p class="lead">Discover premium clothing crafted for elegance, comfort, and timeless style. Explore our exclusive collections today.</p>
             <div class="mt-4">
-                <a href="#" class="btn btn-primary btn-lg mx-2">Shop Now</a>
+                <a href="./views/collections.php+++++" class="btn btn-primary btn-lg mx-2">Shop Now</a>
                 <a href="#" class="btn btn-secondary btn-lg mx-2">Explore Collections</a>
             </div>
         </div>
