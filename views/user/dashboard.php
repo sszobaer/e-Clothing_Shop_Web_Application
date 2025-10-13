@@ -1,3 +1,7 @@
+<?php
+    session_start(); 
+    if(isset($_SESSION['email'])) {
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,7 +43,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#"><i class="bi bi-person-circle"></i> Welcome, <span id="userName">Customer</span></a>
+                            <a class="nav-link text-white" href="#profile" onclick="showSection('profile')"><i class="bi bi-person-circle"></i> Welcome, <span id="userName"><?= "MR." ." ". $_SESSION['fullName'] ?></span></a>
                         </li>
                     </ul>
                 </div>
@@ -200,15 +204,15 @@
                         <form id="profileForm">
                             <div class="mb-3">
                                 <label for="profileName" class="form-label">Full Name</label>
-                                <input type="text" class="form-control" id="profileName" value="John Doe" required>
+                                <input type="text" class="form-control" id="profileName" value=<?=$_SESSION['fullName'] ?> required>
                             </div>
                             <div class="mb-3">
                                 <label for="profileEmail" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="profileEmail" value="john.doe@email.com" required>
+                                <input type="email" class="form-control" id="profileEmail" value=<?=$_SESSION['email'] ?> required>
                             </div>
                             <div class="mb-3">
                                 <label for="profilePhone" class="form-label">Phone</label>
-                                <input type="tel" class="form-control" id="profilePhone" value="+1 (555) 123-4567">
+                                <input type="tel" class="form-control" id="profilePhone" value=<?=$_SESSION['phone'] ?>>
                             </div>
                             <div class="mb-3">
                                 <label for="profileAddress" class="form-label">Address</label>
@@ -438,3 +442,10 @@
 </body>
 
 </html>
+
+<?php
+    } else {
+        header("Location: ../login.php");
+        exit();
+    }
+?>
