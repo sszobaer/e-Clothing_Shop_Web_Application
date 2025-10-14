@@ -23,7 +23,7 @@
             <a class="nav-link <?php echo ($current_page == 'settings.php') ? 'active' : ''; ?>" href="./settings.php">
                 <i class="bi bi-gear me-2"></i>Settings
             </a>
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="../../controller/logoutController.php">
                 <i class="bi bi-box-arrow-right me-2"></i>Logout
             </a>
         </nav>

@@ -17,7 +17,7 @@ if (isset($_SESSION['email'])) {
     <body>
         <?php 
             require_once "./sidebar.php";
-            require_once "../../controllers/addProductController.php";
+            require_once "../../controller/addProductController.php";
         ?>
         <!-- Main Content -->
         <div class="main-content">
@@ -110,7 +110,7 @@ if (isset($_SESSION['email'])) {
             <div class="modal fade" id="addProductModal" tabindex="-1" aria-labelledby="addProductModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
-                        <form action="../../controllers/addProductController.php" method="POST" enctype="multipart/form-data" id="addProductForm">
+                        <form action="../../controller/addProductController.php" method="POST" enctype="multipart/form-data" id="addProductForm">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="addProductModalLabel">Add New Product</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>

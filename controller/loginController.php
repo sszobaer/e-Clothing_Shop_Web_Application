@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['phone'] = $user['phone'];
         $_SESSION['createdAt'] = $user['createdAt'];
         $_SESSION['updatedAt'] = $user['updatedAt'];
-        $_SESSION['role_id'] = $user['role'];
+        $_SESSION['role'] = $user['role'];
         $_SESSION['logged_in'] = true;
 
         // ===== REMEMBER ME COOKIES =====
@@ -51,10 +51,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         // ===== ROLE-BASED REDIRECTION =====
-        if ($_SESSION['role_id'] === 'admin') {
+        if ($_SESSION['role'] === 'admin') {
             header("Location: ../views/admin/dashboard.php");
             exit();
-        } elseif ($_SESSION['role_id'] === 'user') {
+        } elseif ($_SESSION['role'] === 'user') {
             header("Location: ../views/user/dashboard.php");
             exit();
         } else {

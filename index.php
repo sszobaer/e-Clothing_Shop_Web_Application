@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <?php require_once "./views/header.php"?>
+    <?php require_once "./views/includes/header.php"?>
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container">

@@ -10,7 +10,7 @@
     <link href="../assets/css/style.css" rel="stylesheet">
 </head>
 <body>
-    <?php require_once "./header.php"?>
+    <?php require_once "../views/includes/header.php"?>
     <section class="auth-container">
         <div class="container d-flex align-items-center justify-content-center min-vh-100">
             <div class="auth-form mx-auto animate__animated animate__fadeInUp">
