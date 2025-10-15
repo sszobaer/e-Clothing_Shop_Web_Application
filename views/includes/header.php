@@ -33,22 +33,15 @@ $userRole = $_SESSION['role'] ?? null;
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo $basePath; ?>views/men.php">Men</a>
-        </li>
-
-        <li class="nav-item">
           <a class="nav-link" href="<?php echo $basePath; ?>views/collections.php">Collections</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#">Sale</a>
-        </li>
-
-        <a class="nav-link" href="javascript:void(0)" id="cartButton">
+          <a class="nav-link" href="javascript:void(0)" id="cartButton">
           <i class="fa-solid fa-cart-shopping me-1"></i> Cart
         </a>
-
-
+        </li>
+        
         <!-- My Account -->
         <?php if ($isLoggedIn): ?>
           <li class="nav-item dropdown">

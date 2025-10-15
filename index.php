@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <?php require_once "./views/includes/header.php"?>
+    <?php require_once "./views/includes/header.php" ?>
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container">
             <h1>Elevate Your Style with Velora</h1>
             <p class="lead">Discover premium clothing crafted for elegance, comfort, and timeless style. Explore our exclusive collections today.</p>
             <div class="mt-4">
-                <a href="./views/collections.php+++++" class="btn btn-primary btn-lg mx-2">Shop Now</a>
-                <a href="#" class="btn btn-secondary btn-lg mx-2">Explore Collections</a>
+                <a href="./views/collections.php" class="btn btn-primary btn-lg mx-2">Shop Now</a>
+                <a href="./views/collections.php" class="btn btn-secondary btn-lg mx-2">Explore Collections</a>
             </div>
         </div>
     </section>
@@ -74,8 +76,12 @@
                     <a href="#" class="btn btn-primary mt-3">Learn More</a>
                 </div>
                 <div class="col-md-6">
-                    <img src="https://images.unsplash.com/photo-1556905055-8f0d18f2d08f" class="img-fluid rounded" alt="About Velora">
+                    <img src="./assets/img/about.jpg"
+                        class="img-fluid rounded w-50 mx-auto d-block"
+                        alt="About Velora">
+
                 </div>
+
             </div>
         </div>
     </section>
@@ -119,7 +125,8 @@
         </div>
     </section>
 
-    <?php require_once "./views/footer.php"?>
+    <?php require_once "./views/footer.php" ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

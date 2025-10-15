@@ -28,7 +28,7 @@
             <a class="nav-link" href="#orders" onclick="showSection('orders')"><i class="bi bi-cart-check me-2"></i>Order History</a>
             <a class="nav-link" href="#profile" onclick="showSection('profile')"><i class="bi bi-person me-2"></i>Profile</a>
             <a class="nav-link" href="#settings" onclick="showSection('settings')"><i class="bi bi-gear me-2"></i>Settings</a>
-            <a class="nav-link" href="logout.html"><i class="bi bi-box-arrow-right me-2"></i>Logout</a>
+            <a class="nav-link" href="../../controller/logoutController.php"><i class="bi bi-box-arrow-right me-2"></i>Logout</a>
         </nav>
     </div>
 

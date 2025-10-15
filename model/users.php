@@ -1,5 +1,7 @@
 <?php
-require_once "../config/db.php";
+$basePath = dirname(__DIR__);
+
+require_once $basePath . '/config/db.php';
 
 function insertUsers($user){
      $conn = getConnection();
@@ -25,7 +27,7 @@ function insertUsers($user){
         if (mysqli_query($conn, $sql)) {
             return true;
         } else {
-            echo "Insert error: " . mysqli_error($conn); // Debugging line
+            echo "Insert error: " . mysqli_error($conn);
             return false;
         }
     } else {
@@ -59,5 +61,19 @@ function loginUser($user){
     }
     
     return false; 
+}
+
+function getAllUsers() {
+    $conn = getConnection();
+    $sql = "SELECT * FROM users WHERE role = 'user' ORDER BY user_id DESC";
+    $result = mysqli_query($conn, $sql);
+
+    $users = [];
+    if ($result && mysqli_num_rows($result) > 0) {
+        while ($row = mysqli_fetch_assoc($result)) {
+            $users[] = $row;
+        }
+    }
+    return $users;
 }
 ?>
